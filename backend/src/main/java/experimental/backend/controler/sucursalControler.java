@@ -87,7 +87,7 @@ public class sucursalControler {
             return new ResponseEntity<>(map,HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-    @DeleteMapping(value = "/person/{id}")
+    @DeleteMapping(value = "/sucursal/{id}")
     public ResponseEntity<Object> delete(@PathVariable("id") Long id){
     Map<String, Object> map = new HashMap<String, Object>();
         try{

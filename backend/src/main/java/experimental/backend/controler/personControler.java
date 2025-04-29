@@ -89,7 +89,7 @@ public class personControler {
             currentPerson.setMainProvince(person.getMainProvince());
             currentPerson.setMainAddress(person.getMainAddress());
             currentPerson.setSucursal(person.getSucursal());
-            
+
             
             
             person res = personService.save(person);
@@ -102,7 +102,7 @@ public class personControler {
         }
     }
         
-    @DeleteMapping(value = "/sucursal/{id}")
+    @DeleteMapping(value = "/person/{id}")
     public ResponseEntity<Object> delete(@PathVariable("id") Long id){
     Map<String, Object> map = new HashMap<String, Object>();
         try{
